@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Your Brand - Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./photo_galery.html">Photo Gallery</a></li>
+                <li><a href="./store.html">Store</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+            <input class="yourclass" id="lastname" type="text" name="lastname" placeholder="Last Name">
+            <input class="yourclass" id="firstname" type="text" name="firstname" placeholder="First Name">
+            <input class="yourclass" id="mail" type="email" name="email" placeholder="Your Email">
+            <textarea class="yourclass" name="request" id="request" cols="66" rows="10" placeholder="Your Message"></textarea>
+            <select class="yourclass" name="country" id="country">
+                <option value="country1">Country 1</option>
+                <option value="country2">Country 2</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Brand</p>
+    </footer>
+</body>
+</html>
