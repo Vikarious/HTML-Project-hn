@@ -34,14 +34,34 @@
     <section class="contact">
         <h2>Contact Us</h2>
         <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
-            <input class="yourclass" id="lastname" type="text" name="lastname" placeholder="Last Name">
-            <input class="yourclass" id="firstname" type="text" name="firstname" placeholder="First Name">
-            <input class="yourclass" id="mail" type="email" name="email" placeholder="Your Email">
-            <textarea class="yourclass" name="request" id="request" cols="66" rows="10" placeholder="Your Message"></textarea>
-            <select class="yourclass" name="country" id="country">
-                <option value="country1">Country 1</option>
-                <option value="country2">Country 2</option>
-            </select>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input class="yourclass" id="lastname" type="text" name="lastname" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input class="yourclass" id="firstname" type="text" name="firstname" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="yourclass" id="email" type="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="request">Your Message</label>
+                <textarea class="yourclass" name="request" id="request" cols="66" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="yourclass" name="country" id="country">
+                    <option value="country1">France</option>
+                    <option value="country2">United Kingdom</option>
+                    <option value="country1">Spain</option>
+                    <option value="country2">Belgium</option>
+                    <option value="country1">Germany</option>
+                    <option value="country2">Switzerland</option>
+
+                </select>
+            </div>
             <button type="submit" class="btn">Submit</button>
         </form>
     </section>
