@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Your Brand - News</title>
+    <title>L'Arôme Magique - Actualités</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Services <span>&#9662;</span></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Service 1</a></li>
-                        <li><a href="#">Service 2</a></li>
-                        <li><a href="#">Service 3</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li>
+                    <a href="#">À Propos</a>
+                    <ul class="submenu">
+                        <li><a href="photo_galery.html">Histoire</a></li>
+                        <li><a href="about.html">Notre Équipe</a></li>
                     </ul>
                 </li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./photo_galery.html">Photo Gallery</a></li>
-                <li><a href="./store.html">Store</a></li>
-                <li><a href="./news.html">News</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li>
+                    <a href="#">La carte</a>
+                    <ul class="submenu">
+                        <li><a href="menu.html#boisson_froide">Boissons Froides</a></li>
+                        <li><a href="menu.html#boisson_chaude">Boissons Chaudes</a></li>
+                        <li><a href="menu.html#friandise">Friandises</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="news">
-        <h2>Latest News</h2>
-        <div class="news-item">
-            <img src="images/coffee-tasting-event.jpg" alt="Coffee Tasting Event">
-            <h3>Artisanal Coffee Tasting Event</h3>
-            <p>Date: 18/09/2023</p>
-            <p>By: Caffein Man </p>
-            <p>
-                Join us for an unforgettable coffee experience at TasteDelight Café & Bistro's Artisanal Coffee Tasting Event! Discover the world of specialty coffees as our expert baristas guide you through a curated selection of brews from around the globe.
-            </p>
-            <p>
-                Immerse yourself in the rich aromas and flavors of single-origin beans. Learn about the unique coffee-growing regions, brewing techniques, and the art of latte art. Whether you're a coffee enthusiast or just starting your coffee journey, this event is perfect for all.
-            </p>
-            <p>
-                Reserve your spot today and savor the flavor of exceptional coffees with us.
-            </p>
-        </div>
-        
-        <div class="news-item">
-            <img src="images/live-music-night.jpg" alt="Live Music Night">
-            <h3>Live Music Nights at TasteDelight</h3>
-            <p>Date: 15/09/2023</p>
-            <p>By: Caffein Man</p>
-            <p>
-                Get ready for unforgettable evenings filled with live music and delicious bites at TasteDelight Café & Bistro! Our Live Music Nights are back, and we're bringing local talent to our stage every weekend.
-            </p>
-            <p>
-                Enjoy a diverse range of music genres, from acoustic melodies to upbeat jazz. Pair the tunes with our delectable menu offerings, including specialty coffee, gourmet dishes, and handcrafted cocktails.
-            </p>
-            <p>
-                Whether you're out for a romantic date or a night out with friends, our Live Music Nights create the perfect atmosphere for relaxation and enjoyment. Check our event schedule for upcoming performances.
-            </p>
-        </div>
-        
-    </section>
+    <div class="container">
+        <section class="actualites-section">
+            <h1>Dernières Actualités</h1>
+            <div class="actualite-item">
+                <img src="./images/actualites/actualite1.png" alt="Actualité 1">
+                <div class="actualite-content">
+                    <h2>Nouveau Mélange de Café</h2>
+                    <p>Date : 5 Septembre 2023</p>
+                    <p>Découvrez notre dernier mélange de café, avec des notes de saveur uniques et une torréfaction parfaite. Disponible dès aujourd'hui dans notre boutique.</p>
+                </div>
+            </div>
+            <div class="actualite-item">
+                <div class="actualite-content">
+                    <h2>Atelier de Dégustation</h2>
+                    <p>Date : 12 Septembre 2023</p>
+                    <p>Participez à notre atelier de dégustation de café et explorez les arômes et les saveurs de nos cafés artisanaux. Réservez votre place dès maintenant.</p>
+                </div>
+                <img src="./images/actualites/actualite2.png" alt="Actualité 2">
+            </div>
+        </section>
+    </div>
+    
 
     <footer>
-        <p>&copy; 2023 Your Brand</p>
+        <div class="container">
+            <p>Contactez les Sorciers du Café</p>
+            <p>Nous sommes toujours ravis d'entendre vos messages, que ce soit une question, un compliment ou une suggestion. Envoyez-nous un hibou postal magique via le formulaire ci-dessous, ou faites-nous un signe par téléphone ou en vous rendant dans notre sanctuaire caféiné.</p>
+            <a href="contact.html">Formulaire de Contact</a>
+        </div>
     </footer>
 </body>
 </html>

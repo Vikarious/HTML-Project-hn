@@ -1,62 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Your Brand - Menu</title>
+    <title>L'Arôme Magique - La carte</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Services <span>&#9662;</span></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Service 1</a></li>
-                        <li><a href="#">Service 2</a></li>
-                        <li><a href="#">Service 3</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li>
+                    <a href="#">À Propos</a>
+                    <ul class="submenu">
+                        <li><a href="photo_galery.html">Histoire</a></li>
+                        <li><a href="about.html">Notre Équipe</a></li>
                     </ul>
                 </li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./photo_galery.html">Photo Gallery</a></li>
-                <li><a href="./store.html">Store</a></li>
-                <li><a href="./news.html">News</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li>
+                    <a href="#">La carte</a>
+                    <ul class="submenu">
+                        <li><a href="menu.html#boisson_froide">Boissons Froides</a></li>
+                        <li><a href="menu.html#boisson_chaude">Boissons Chaudes</a></li>
+                        <li><a href="menu.html#friandise">Friandises</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="menu">
-        <h2>Coffee Menu</h2>
-        <div class="menu-item">
-            <img src="images/espresso.jpg" alt="Espresso">
-            <div class="item-description">
-                <h3>Espresso</h3>
-                <p>A shot of our finest espresso, bold and intense.</p>
-            </div>
+    <main>
+        <div class="container">
+            <section class="carte">
+                <h1>La carte</h1>
+                <section class="menu-section" id="boisson_chaude">
+                    <h2>Boissons Chaudes</h2>
+                    <div class="menu-item">
+                        <img src="./images/boisson_chaude/expresso.jpg" alt="Espresso">
+                        <p>Espresso</p>
+                        <span class="price">2.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_chaude/cappuccino.jpg" alt="Cappuccino">
+                        <p>Cappuccino</p>
+                        <span class="price">3.00€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_chaude/americano.jpg" alt="Americano">
+                        <p>Americano</p>
+                        <span class="price">2.80€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_chaude/chocolat_chaud.jpg" alt="Chocolat chaud">
+                        <p>Chocolat chaud</p>
+                        <span class="price">3.20€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_chaude/latte.jpg" alt="Latté">
+                        <p>Latté</p>
+                        <span class="price">3.00€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_chaude/the.jpg" alt="Thé">
+                        <p>Thé</p>
+                        <span class="price">2.50€</span>
+                    </div>
+                </section>
+        
+                <section class="menu-section" id="boisson_froide">
+                    <h2>Boissons Froides</h2>
+                    <div class="menu-item">
+                        <img src="./images/boisson_froide/cafe-glace.jpeg" alt="Café glacé">
+                        <p>Café glacé</p>
+                        <span class="price">3.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_froide/the-glace.jpg" alt="Thé glacé">
+                        <p>Thé glacé</p>
+                        <span class="price">2.80€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_froide/Milkshake.jpg" alt="Milkshake">
+                        <p>Milkshake</p>
+                        <span class="price">4.00€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/boisson_froide/smoothie.jpg" alt="Smoothie">
+                        <p>Smoothie</p>
+                        <span class="price">3.50€</span>
+                    </div>
+                </section>
+        
+                <section class="menu-section" id="friandise">
+                    <h2>Friandises</h2>
+                    <div class="menu-item">
+                        <img src="./images/friandise/croissants.jpg" alt="Croissant">
+                        <p>Croissants</p>
+                        <span class="price">2.00€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/friandise/cookie.jpg" alt="Cookie">
+                        <p>Cookies</p>
+                        <span class="price">1.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/friandise/brownie.jpg" alt="Brownie">
+                        <p>Brownies</p>
+                        <span class="price">2.20€</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/friandise/donuts.jpg" alt="Donuts">
+                        <p>Donuts</p>
+                        <span class="price">1.80€</span>
+                    </div>
+                </section>
+            </section>
         </div>
-        <div class="menu-item">
-            <img src="images/cappuccino.jpg" alt="Cappuccino">
-            <div class="item-description">
-                <h3>Cappuccino</h3>
-                <p>Espresso with steamed milk and a frothy foam top.</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="images/latte.jpg" alt="Latte">
-            <div class="item-description">
-                <h3>Latte</h3>
-                <p>Espresso with steamed milk, silky and creamy.</p>
-            </div>
-        </div>
-    </section>
-
+    </main>
     <footer>
-        <p>&copy; 2023 Your Brand</p>
+        <div class="container">
+            <p>Contactez les Sorciers du Café</p>
+            <p>Nous sommes toujours ravis d'entendre vos messages, que ce soit une question, un compliment ou une suggestion. Envoyez-nous un hibou postal magique via le formulaire ci-dessous, ou faites-nous un signe par téléphone ou en vous rendant dans notre sanctuaire caféiné.</p>
+            <a href="contact.html">Formulaire de Contact</a>
+        </div>
     </footer>
 </body>
 </html>
