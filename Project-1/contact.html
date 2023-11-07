@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>LiquidSmoke - Accueil</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li>
+            <a href="#">À Propos</a>
+            <ul class="submenu">
+              <li><a href="about.html">Qui sommes nous?</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="menu.html">Nos saveurs</a>
+            <ul class="submenu">
+              <li><a href="menu.html#LiquideFruité">Liquide Fruité</a></li>
+              <li>
+                <a href="menu.html#LiquideFraicheur">Liquide Fraicheur</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="news.html">Actualités</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="contact-section">
+        <h1>Contactez nous</h1>
+        <form
+          action="http://vip.groupehn.com:20003/html/infospost.php"
+          method="POST"
+        >
+          <label for="lastname">Nom :</label>
+          <input
+            class="yourclass"
+            id="lastname"
+            type="text"
+            name="lastname"
+            placeholder="Nom"
+            required
+          />
+
+          <label for="firstname">Prénom :</label>
+          <input
+            class="yourclass"
+            id="firstname"
+            type="text"
+            name="firstname"
+            placeholder="Prénom"
+            required
+          />
+
+          <label for="email">Email :</label>
+          <input
+            class="yourclass"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@domaine.com"
+            required
+          />
+
+          <label for="request">Votre Message :</label>
+          <textarea
+            class="yourclass"
+            name="request"
+            id="request"
+            cols="66"
+            rows="10"
+            placeholder="Écrivez nous !"
+            required
+          ></textarea>
+
+          <label for="country">Pays :</label>
+          <select class="yourclass" name="country" id="country" required>
+            <option value="France">France</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Italie">Italie</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Royaume-Unis">Royaume-Unis</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Portugal">Portugal</option>
+          </select>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 LiquidSmoke. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
