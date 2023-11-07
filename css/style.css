@@ -1,10 +1,21 @@
+html{
+    background-color: beige;
+}
+
+/* 
+**
+***
+    header,body,footer
+***
+**
+*/
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     background-color: #f5f5f5;
     max-width: 960px;
     margin: 0 auto;
@@ -16,7 +27,7 @@ body {
 }
 
 header {
-    background-color: #6D5440;
+    background-color: #000000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -58,10 +69,10 @@ header nav a {
     padding-top: 10px;
     top: 100%;
     left: 0;
-    background-color: #6D5440;
+    background-color: #000000;
     z-index: 1;
     white-space: nowrap; 
-    border-top: 3px solid #E29375;
+    border-top: 3px solid #e275d0;
 }
 
 .submenu li {
@@ -78,7 +89,7 @@ header nav ul li:hover .submenu {
 }
 
 header nav a:hover {
-    color: #E29375;
+    color: #e275d0;
 }
 
 
@@ -96,16 +107,10 @@ h2 {
     margin-bottom: 10px;
 }
 
-.points-forts ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #6D5440;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -119,8 +124,15 @@ footer a {
     font-weight: bold;
 }
 
-#accueil {
-    background-image: url('../images/cafe-background.jpg');
+/* 
+**
+***
+    Page index 
+***
+**
+*/
+#home {
+    background-image: url('../images/Smoke.jpg');
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -128,83 +140,101 @@ footer a {
     padding: 100px 0;
 }
 
-#accueil h1 {
+#home h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-#accueil p {
+#home p {
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
 
-.points-forts ul {
-    list-style-type: none;
-    margin-left: 20px;
+#cover1 {
+    background-image: url('../images/Smoke.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
 }
 
-#horaires {
-    background-color: #462e01;
+#schedule {
+    background-color: #000000;
     color: #fff;
     padding: 40px 0;
     text-align: center;
 }
 
-#horaires h2 {
+#schedule h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-#horaires table {
+#schedule table {
     margin: 0 auto;
 }
 
-#horaires td {
+#schedule td {
     padding: 10px 20px;
     font-size: 1.2rem;
 }
 
-#horaires table,
-#horaires td {
+#schedule table,
+#schedule td {
     border: 2px solid #fff;
     border-collapse: collapse;
 }
 
-#histoire, #equipe {
-    background-color: #f7f7f7; 
+/* 
+**
+***
+    Page about 
+***
+**
+*/
+#aboutUs {
+    background-color: #000000; 
     text-align: center;
 }
 
-#histoire .container, #equipe .container {
-    background-color: #F6E8D2;
+#aboutUs .container {
+    background-color: rgb(185, 185, 185);
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-#histoire h1, #equipe h1 {
+#aboutUs h1 {
     font-size: 32px;
-    color: #333; 
+    color: #000000; 
     margin-bottom: 20px;
 }
 
-#histoire p, #equipe p {
+#aboutUs p {
     font-size: 18px;
     line-height: 1.5;
-    color: #666; 
+    color: #000000; 
 }
 
-.carte {
+/* 
+**
+***
+    Page menu
+***
+**
+*/
+.choice {
     text-align: center;
     margin-top: 20px;
 }
-.carte h1{
+.choice h1{
     font-size: 30px;
-    color: #6D5440;
+    color: rgb(0, 0, 0);
     margin-bottom: 20px;
 }
 
 .menu-section {
-    background-color: #F6E8D2;
+    background-color: #bdbcbc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px 0;
@@ -218,7 +248,7 @@ footer a {
 
 .menu-section h2 {
     font-size: 28px;
-    color: #6D5440;
+    color: #000000;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -231,7 +261,7 @@ footer a {
     vertical-align: top;
     position: relative; 
     overflow: hidden; 
-    transition: transform 0.3s; 
+    transition: transform 1s; 
 }
 
 .menu-item:hover {
@@ -243,7 +273,7 @@ footer a {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s; 
+    transition: transform 1s; 
 }
 
 .menu-item:hover img {
@@ -252,94 +282,76 @@ footer a {
 
 .menu-item p {
     font-size: 16px;
-    color: #333;
+    color: #000000;
     margin-top: 10px;
 }
 
 .price {
     font-weight: bold; 
-    color: #FF6600; 
+    color: #940101; 
     font-size: 18px;
     margin-top: 5px;
 }
 
-.evenement-section, .actualites-section {
+/* 
+**
+***
+    Page news 
+***
+**
+*/
+.actualites-section {
     text-align: center;
     margin-top: 20px;
 }
 
-.evenement-section h1, .actualites-section h1 {
+.actualites-section h1 {
     font-size: 28px;
-    color: #6D5440;
+    color: #000000;
     margin-bottom: 20px;
 }
 
-.evenement-item, .actualite-item {
+.actualite-item {
     margin: 20px;
-    background-color: #F6E8D2;
+    background-color: #bdbcbc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
 }
 
-.evenement-item .evenement-content, .actualite-item {
+.actualite-item {
     flex: 1;
     padding: 20px;
     text-align: center;
 }
 
-.evenement-item img, .actualite-item img {
+.actualite-item img {
     max-width: 400px;
     height: auto;
     border-radius: 10px;
     margin: 0 20px;
 }
 
-.evenement-item h2, .actualite-item h2 {
+.actualite-item h2 {
     font-size: 24px;
-    color: #333;
+    color: #000000;
     margin-top: 10px;
 }
 
-.evenement-item p, .actualite-item p {
+.actualite-item p {
     font-size: 16px;
-    color: #666;
+    color: #282828;
     margin-top: 5px;
 }
 
-
-.contact-section {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.contact-section h1 {
-    font-size: 28px;
-    color: #6D5440;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.contact-section form {
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-.contact-section label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
+/* 
+**
+***
+    Page contact 
+***
+**
+*/
 .contact-section input[type="text"],
 .contact-section input[type="email"],
 .contact-section textarea,
@@ -350,12 +362,42 @@ footer a {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    color: #333;
+    color: #000000;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section h1 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
 }
 
 .contact-section button {
     display: inline-block;
-    background-color: #6D5440;
+    background-color: #000000;
     color: #fff;
     padding: 10px 20px;
     font-size: 18px;
@@ -365,5 +407,5 @@ footer a {
 }
 
 .contact-section button:hover {
-    background-color: #4A3627;
+    background-color: #e275d0;
 }

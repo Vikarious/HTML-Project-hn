@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>L'Arôme Magique - Contact</title>
+    <title>LiquidSmoke - Accueil</title>
 </head>
 <body>
     <header>
@@ -14,47 +14,50 @@
                 <li>
                     <a href="#">À Propos</a>
                     <ul class="submenu">
-                        <li><a href="photo_galery.html">Histoire</a></li>
-                        <li><a href="about.html">Notre Équipe</a></li>
+                        <li><a href="about.html">Qui sommes nous?</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">La carte</a>
+                    <a href="menu.html">Nos saveurs</a>
                     <ul class="submenu">
-                        <li><a href="menu.html#boisson_froide">Boissons Froides</a></li>
-                        <li><a href="menu.html#boisson_chaude">Boissons Chaudes</a></li>
-                        <li><a href="menu.html#friandise">Friandises</a></li>
+                        <li><a href="menu.html#LiquideFruité">Liquide Fruité</a></li>
+                        <li><a href="menu.html#LiquideFraicheur">Liquide Fraicheur</a></li>
                     </ul>
                 </li>
                 <li><a href="news.html">Actualités</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
         <section class="contact-section">
-            <h1>Contactez les Sorciers du Café</h1>
-            <p>Nous sommes toujours ravis d'entendre vos messages, que ce soit une question, un compliment ou une suggestion. Envoyez-nous un hibou postal magique via le formulaire ci-dessous, ou faites-nous un signe par téléphone ou en vous rendant dans notre sanctuaire caféiné.</p>
-            
+            <h1>Contactez nous</h1>            
             <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
                 <label for="lastname">Nom :</label>
-                <input class="yourclass" id="lastname" type="text" name="lastname" required>
+                <input class="yourclass" id="lastname" type="text" name="lastname" placeholder="Nom" required>
 
                 <label for="firstname">Prénom :</label>
-                <input class="yourclass" id="firstname" type="text" name="firstname" required>
+                <input class="yourclass" id="firstname" type="text" name="firstname" placeholder="Prénom" required>
 
                 <label for="email">Email :</label>
-                <input class="yourclass" id="email" type="email" name="email" placeholder="votre-email@yahoo.com" required>
+                <input class="yourclass" id="email" type="email" name="email" placeholder="email@domaine.com" required>
 
                 <label for="request">Votre Message :</label>
-                <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea>
+                <textarea class="yourclass" name="request" id="request" cols="66" rows="10" placeholder="Écrivez nous !" required></textarea>
 
                 <label for="country">Pays :</label>
                 <select class="yourclass" name="country" id="country" required>
+
                     <option value="France">France</option>
                     <option value="Belgique">Belgique</option>
-                    <option value="Canada">Canada</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Royaume-Unis">Royaume-Unis</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Portugal">Portugal</option>
                 </select>
 
                 <button type="submit">Envoyer</button>
@@ -63,11 +66,7 @@
     </div>
 
     <footer>
-        <div class="container">
-            <p>Contactez les Sorciers du Café</p>
-            <p>Nous sommes toujours ravis d'entendre vos messages, que ce soit une question, un compliment ou une suggestion. Envoyez-nous un hibou postal magique via le formulaire ci-dessous, ou faites-nous un signe par téléphone ou en vous rendant dans notre sanctuaire caféiné.</p>
-            <a href="contact.html">Formulaire de Contact</a>
-        </div>
+        <p>&copy; 2023 LiquidSmoke. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
